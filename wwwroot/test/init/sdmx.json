@@ -13,6 +13,11 @@
                 "name": "Example 2",
                 "type": "sdmx-json",
                 "url": "data/abs_sdmx_example2.json"
+            },
+            {
+                "name": "Example 3",
+                "type": "sdmx-json",
+                "url": "data/sdmx_example3.json"
             }
         ]
     }]
