@@ -15,9 +15,14 @@
                 "url": "data/abs_sdmx_example2.json"
             },
             {
-                "name": "Example 3",
+                "name": "Two dimensions",
                 "type": "sdmx-json",
                 "url": "data/sdmx_example3.json"
+            },
+            {
+                "name": "Non-spatial",
+                "type": "sdmx-json",
+                "url": "data/sdmx_example4.json"
             }
         ]
     }]
