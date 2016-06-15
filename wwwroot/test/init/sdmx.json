@@ -31,7 +31,7 @@
                 "regionDimensionId": "LOCATION",
                 "regionType": "ISO3",
                 "featureInfoTemplate": {
-                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units unclear)</p>",
+                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units TBC)</p>",
                     "formats": {
                         "Value": {
                             "maximumFractionDigits": 0,
@@ -47,7 +47,7 @@
                 "regionDimensionId": "LOCATION",
                 "regionType": "ISO3",
                 "featureInfoTemplate": {
-                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units unclear)</p>",
+                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units TBC)</p>",
                     "formats": {
                         "Value": {
                             "maximumFractionDigits": 0,
