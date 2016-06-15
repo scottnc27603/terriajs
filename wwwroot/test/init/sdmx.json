@@ -29,21 +29,49 @@
                 "type": "sdmx-json",
                 "url": "http://stats.oecd.org/sdmx-json/data/QNA/.B1_GE.VOBARSA.A/all",
                 "regionDimensionId": "LOCATION",
-                "regionType": "cnt3"
+                "regionType": "ISO3",
+                "featureInfoTemplate": {
+                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units unclear)</p>",
+                    "formats": {
+                        "Value": {
+                            "maximumFractionDigits": 0,
+                            "useGrouping": true
+                        }
+                    }
+                }
             },
             {
-                "name": "OECD Annual GDP VOBARSA (preloaded)",
+                "name": "OECD Annual GDP VOBARSA (local copy)",
                 "type": "sdmx-json",
                 "url": "data/oecd_qna_example.json",
                 "regionDimensionId": "LOCATION",
-                "regionType": "cnt3"
+                "regionType": "ISO3",
+                "featureInfoTemplate": {
+                    "template": "<p>Annual {{date}} GDP: {{Value}}</p><p>(expenditure approach, seasonally adjusted, units unclear)</p>",
+                    "formats": {
+                        "Value": {
+                            "maximumFractionDigits": 0,
+                            "useGrouping": true
+                        }
+                    }
+                },
+                "tableStyle": {
+                    "columns": {
+                        "Value": {
+                            "format": {
+                                "maximumFractionDigits": 2,
+                                "useGrouping": true
+                            }
+                        }
+                    }
+                }
             },
             {
                 "name": "OECD QNA",
                 "type": "sdmx-json",
                 "url": "http://stats.oecd.org/sdmx-json/data/QNA",
                 "regionDimensionId": "LOCATION",
-                "regionType": "cnt3"
+                "regionType": "ISO3"
             }
         ]
     }]
