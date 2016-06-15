@@ -71,7 +71,15 @@
                 "type": "sdmx-json",
                 "url": "http://stats.oecd.org/sdmx-json/data/QNA",
                 "regionDimensionId": "LOCATION",
-                "regionType": "ISO3"
+                "regionType": "ISO3",
+                "whitelist_UNUSED": {
+                    "SUBJECT": [
+                        "B1_GA", "GDP", "B1_GE", "B1_GI"
+                    ],
+                    "MEASURE": [
+                        "VNBAR", "VOBARSA", "VPVOBARSA", "HVPVOBARSA"
+                    ]
+                }
             }
         ]
     }]
