@@ -25,9 +25,9 @@
                 "url": "data/sdmx_example4.json"
             },
             {
-                "name": "OECD Quarterly GDP VOBARSA",
+                "name": "OECD Annual GDP VOBARSA",
                 "type": "sdmx-json",
-                "url": "http://stats.oecd.org/sdmx-json/data/QNA/.B1_GE.VOBARSA.Q/all",
+                "url": "http://stats.oecd.org/sdmx-json/data/QNA/.B1_GE.VOBARSA.A/all",
                 "regionDimensionId": "LOCATION",
                 "regionType": "cnt3"
             },
