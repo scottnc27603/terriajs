@@ -17,7 +17,8 @@
             {
                 "name": "Two dimensions",
                 "type": "sdmx-json",
-                "url": "data/sdmx_example3.json"
+                "url": "/data/sdmx_example3.json",
+                "dataflowUrlComponent": ""
             },
             {
                 "name": "Non-spatial",
