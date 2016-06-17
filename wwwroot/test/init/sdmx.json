@@ -80,6 +80,8 @@
                 "url": "http://stats.oecd.org/sdmx-json/data/QNA",
                 "regionDimensionId": "LOCATION",
                 "regionType": "ISO3",
+                "startTime": "1970",
+                "endTime": "2016",
                 "whitelist": {
                     "SUBJECT": [
                         "B1_GE", "B1_GA", "B1GD"
