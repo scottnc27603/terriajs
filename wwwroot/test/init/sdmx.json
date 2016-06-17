@@ -93,6 +93,26 @@
                         "A"
                     ]
                 }
+            },
+            {
+                "name": "OECD QNA 2005 only",
+                "type": "sdmx-json",
+                "url": "http://stats.oecd.org/sdmx-json/data/QNA",
+                "regionDimensionId": "LOCATION",
+                "regionType": "ISO3",
+                "startTime": "2005",
+                "endTime": "2005",
+                "whitelist": {
+                    "SUBJECT": [
+                        "B1_GE", "B1_GA", "B1GD"
+                    ],
+                    "MEASURE": [
+                        "VOBARSA", "VPVOBARSA", "LNBQRSA"
+                    ],
+                    "FREQUENCY": [
+                        "A"
+                    ]
+                }
             }
         ]
     }]
