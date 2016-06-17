@@ -68,6 +68,13 @@
                 }
             },
             {
+                "name": "OECD Some QNA (local copy)",
+                "type": "sdmx-json",
+                "url": "data/oecd_qna2.json",
+                "regionDimensionId": "LOCATION",
+                "regionType": "ISO3"
+            },
+            {
                 "name": "OECD QNA",
                 "type": "sdmx-json",
                 "url": "http://stats.oecd.org/sdmx-json/data/QNA",
@@ -75,10 +82,10 @@
                 "regionType": "ISO3",
                 "whitelist": {
                     "SUBJECT": [
-                        "B1_GA", "GDP", "B1_GE", "B1_GI"
+                        "B1_GE", "B1_GA", "B1GD"
                     ],
                     "MEASURE": [
-                        "VOBARSA", "VPVOBARSA"
+                        "VOBARSA", "VPVOBARSA", "LNBQRSA"
                     ],
                     "FREQUENCY": [
                         "A"
