@@ -78,7 +78,10 @@
                         "B1_GA", "GDP", "B1_GE", "B1_GI"
                     ],
                     "MEASURE": [
-                        "VNBAR", "VOBARSA", "VPVOBARSA", "HVPVOBARSA"
+                        "VOBARSA", "VPVOBARSA"
+                    ],
+                    "FREQUENCY": [
+                        "A"
                     ]
                 }
             }
