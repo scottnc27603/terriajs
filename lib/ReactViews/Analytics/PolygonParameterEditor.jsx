@@ -45,7 +45,7 @@ const PolygonParameterEditor = React.createClass({
 
         let polygon = "";
         for (var i=0; i<pointsLongLats.length; i++) {
-            polygon += "[" + pointsLongLats[i][0] + ", " + pointsLongLats[i][1] + "] ";
+            polygon += "[" + pointsLongLats[i][0].toFixed(3) + ", " + pointsLongLats[i][1].toFixed(3) + "] ";
             if (i !== pointsLongLats.length-1) {
                 polygon += ", ";
             }
