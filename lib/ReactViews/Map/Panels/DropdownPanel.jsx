@@ -126,8 +126,10 @@ const DropdownPanel = React.createClass({
                         className={classNames(Styles.button, this.props.theme.btn)}
                         title={this.props.btnTitle}
                         ref={element => this.buttonElement = element}>
-                    <Icon glyph={Icon.GLYPHS[this.props.theme.icon]}/>
-                    {this.props.btnText}
+                    <If condition={this.props.theme.icon}>
+                        <Icon glyph={Icon.GLYPHS[this.props.theme.icon]}/>
+                    </If>
+                    <span>{this.props.btnText}</span>
                 </button>
                 <If condition={this.state.isOpen}>
                     <div className={classNames(

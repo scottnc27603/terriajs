@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from "../Icon.jsx";
 import Styles from './search-result.scss';
 import classNames from 'classnames';
 
@@ -22,8 +23,9 @@ const LocationItem = React.createClass({
         return (
             <li className={classNames(Styles.locationItem, {[Styles.dark]: this.props.theme === 'dark', [Styles.light]: this.props.theme === 'light'})}>
                 <button type='button' onClick={this.props.clickAction} className={classNames(Styles.btn, {[Styles.btnLocationName]: this.props.showPin})}>
-                    {this.props.name}
-                    <i className={Styles.iconRightArrow} />
+                    {this.props.showPin ? <span className={Styles.locationIcon}><Icon glyph={Icon.GLYPHS.location}/></span> : null}
+                    <span>{this.props.name}</span>
+                    <span className={Styles.arrowIcon}><Icon glyph={Icon.GLYPHS.right}/></span>
                 </button>
             </li>
         );
