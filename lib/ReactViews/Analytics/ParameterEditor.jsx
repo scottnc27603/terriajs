@@ -102,7 +102,7 @@ const ParameterEditor = React.createClass({
                        htmlFor={this.fieldId + this.props.parameter.type}>
                     {this.props.parameter.name}
                     {this.props.parameter.isRequired &&
-                    <span>(required)</span>
+                    <span> (required)</span>
                     }
                 </label>
                 <div id={this.fieldId + this.props.parameter.type} className={Styles.fieldParameterEditor}>

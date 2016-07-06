@@ -51,7 +51,7 @@ const PolygonParameterEditor = React.createClass({
             }
         }
         if (defined(polygon)) {
-            return "[ " + polygon + " ]";
+            return "[" + polygon + "]";
         } else {
             return "";
         }
