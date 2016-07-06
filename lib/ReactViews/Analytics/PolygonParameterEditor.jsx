@@ -1,14 +1,10 @@
 import React from 'react';
 
-import Cartographic from 'terriajs-cesium/Source/Core/Cartographic';
 import CesiumMath from 'terriajs-cesium/Source/Core/Math';
 import Ellipsoid from 'terriajs-cesium/Source/Core/Ellipsoid';
 import defined from 'terriajs-cesium/Source/Core/defined';
-import Rectangle from 'terriajs-cesium/Source/Core/Rectangle';
-import knockout from 'terriajs-cesium/Source/ThirdParty/knockout';
 
 import UserDrawing from '../../Map/UserDrawing';
-import MapInteractionMode from '../../Models/MapInteractionMode';
 import ObserveModelMixin from '../ObserveModelMixin';
 import Styles from './parameter-editors.scss';
 
@@ -44,7 +40,7 @@ const PolygonParameterEditor = React.createClass({
         const pointsLongLats = this.props.parameterValues[this.props.parameter.id];
 
         let polygon = "";
-        for (var i=0; i<pointsLongLats.length; i++) {
+        for (let i=0; i<pointsLongLats.length; i++) {
             polygon += "[" + pointsLongLats[i][0].toFixed(3) + ", " + pointsLongLats[i][1].toFixed(3) + "]";
             if (i !== pointsLongLats.length-1) {
                 polygon += ", ";
@@ -72,13 +68,13 @@ const PolygonParameterEditor = React.createClass({
     },
 
     onPointClicked(pointEntities) {
-        let pointEnts = pointEntities.entities.values;
-        let pointsLongLats = [];
+        const pointEnts = pointEntities.entities.values;
+        const pointsLongLats = [];
         for (let i=0; i < pointEnts.length; i++) {
             const currentPoint = pointEnts[i];
             const currentPointPos = currentPoint.position.getValue(this.props.previewed.terria.clock.currentTime);
             const cartographic = Ellipsoid.WGS84.cartesianToCartographic(currentPointPos);
-            var points = [];
+            const points = [];
             points.push(CesiumMath.toDegrees(cartographic.longitude));
             points.push(CesiumMath.toDegrees(cartographic.latitude));
             pointsLongLats.push(points);
