@@ -42,7 +42,7 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.2",
+    "babel-eslint": "^6.1.2",
     "eslint": "^3.0.0",
     "generate-terriajs-schema": "^1.2.1",
     "glob-all": "^3.0.1",
